@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color:rgb(197, 65, 13);
+    max-height: 100vh;
+    font-family: sans-serif;
+font-weight: bold;
+}
+h1{
+    text-align: center;
+color: green;
+padding: 20px;
+
+  
+  
+ }
+ span{
+    color: black;
+ }
+
+ nav{
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+    
+   }
+   nav ul{
+       list-style: none;
+     
+     
+       
+   }
+   
+   nav ul a {
+       text-decoration: none;
+       color:white;
+       font-weight: 600px;
+       display:inline-block;
+       padding: 20px 20px;
+       letter-spacing: 1px;
+       transition: 0.4s ease-in;
+       font-size: 17px;
+       
+      
+      
+   }
+   nav a:hover{
+         border-bottom: 1px solid red;
+       color: green;
+       transform: scale(0.5);
+   }
+
+   .Items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:30px 20px ;
+    grid-column-gap:20px;
+    grid-row-gap:30px;  
+    
+ }
+
+ .item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    
+ }
+
+ .item img:hover{
+    transform: scale(1.04);
+
+ }
+ .item h4{
+    text-align: center;
+      color: white;
+     padding: 5px;
+ }
+ .item button{
+     border: none;
+     outline: none;
+     cursor: pointer;
+     background-color: black;
+    color: white;
+    padding: 10px 30px;
+    display: block  ;
+    margin: 0 auto;
+    transition:  0.2s all;
+     border-radius: 4px;
+ }
+
+ .item button:hover{
+    transform: scale(1.08);
+    background-color: green;
+    color: black;
+    font-weight: 600px;
+ }
+
+ @media screen  and (max-width:1000px){
+    .Items{
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    
+}
+@media screen and (max-width:760px) {
+    .Items{
+        grid-template-columns: repeat(1,1fr);
+        background-color: white;
+        
+    }
+
+    .item h4{
+        text-align: center;
+          color:black ;
+         padding: 5px;
+    
+}
+
+}
